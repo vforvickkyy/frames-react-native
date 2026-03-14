@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-expo-app@latest frames --template blank-typescript)",
+      "Bash(mv frames/* .)",
+      "Bash(mv frames/.* .)",
+      "Bash(rm -rf frames)",
+      "Bash(npx expo:*)",
+      "Bash(npm install:*)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); d.setdefault\\(''''expo'''',{}\\).update\\({''''main'''': ''''index.ts''''}\\); print\\(json.dumps\\(d, indent=2\\)\\)\")",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
